@@ -28,10 +28,6 @@ let result3 = mySimpleReduce([4, 6, 2, 8, 3], function(max, el) {
     }
 });
 console.log(result3); // 8
-
-AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
-- Explain, but don't code, how you would refactor this problem to take in an
-  optional initial accumulator
 *******************************************************************************/
 
 function mySimpleReduce(array, cb) {

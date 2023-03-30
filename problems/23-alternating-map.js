@@ -32,7 +32,6 @@ let whisper = function (s) {
 };
 console.log(alternatingMap(['hEy', 'EVERYone', 'whats', 'uP??'], yell, whisper));
 // [ 'HEY!', '..everyone..', 'WHATS!', '..up??..' ]
-
 *******************************************************************************/
 
 function alternatingMap(array, cb1, cb2) {
