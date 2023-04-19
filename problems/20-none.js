@@ -29,7 +29,17 @@ console.log(result4);   // false
 *******************************************************************************/
 
 function none(array, cb) {
-  // Your code here
+  let count = 0;
+  for (let i = 0; i < array.length; i++) {
+    let val = array[i];
+    if (cb(val)) {
+      count++
+    }
+  }
+  if (count === 0) {
+    return true;
+  }
+  return false;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/

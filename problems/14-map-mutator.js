@@ -19,8 +19,20 @@ console.log(arr2); // [ 0, 9, 20 ]
 *******************************************************************************/
 
 function mapMutator(array, cb) {
-  // Your code here
-}
+  for (let i = 0; i < array.length; i++) {
+    let val = array[i];
+    array[i] = cb(val, i);
+
+
+  }
+
+  // array.forEach(function(el, i){
+  //   el = cb(el);
+  // })
+  // return array;
+   }
+
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {

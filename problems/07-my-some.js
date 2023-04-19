@@ -24,7 +24,17 @@ console.log(result3);   // true
 *******************************************************************************/
 
 function mySome(array, cb) {
-    // Your code here
+    let newArr = [];
+    for (let j = 0; j < array.length; j++) {
+        let el = array[j]
+        if (cb(el, j)) {
+            newArr.push(el);
+        }
+    }
+    if (newArr.length > 0) {
+        return true;
+    }
+    return false;
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
